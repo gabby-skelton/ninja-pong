@@ -102,7 +102,7 @@ window.addEventListener('keyup', keyUpHandler);
 
 function spaceKeyHandler(event) {
   switch (event.keyCode) {
-      case 32;
+    case 32:
       spacePressed = true;
       console.log("space key pressed");
       setInterval(playGame, 1000 / 60);
