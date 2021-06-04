@@ -9,7 +9,6 @@ const paddleHeight = 100;
 
 let upArrowPressed = false;
 let downArrowPressed = false;
-let spacePressed = false;
 let gamePaused = false;
 let victory = false;
 
@@ -101,12 +100,9 @@ window.addEventListener('keydown', keyDownHandler);
 window.addEventListener('keyup', keyUpHandler);
 
 function spaceKeyHandler(event) {
-  switch (event.keyCode) {
-    case 32:
-      spacePressed = true;
-      console.log("space key pressed");
+    if(event.keyCode == 32) {
+      console.log(event + " pressed");
       setInterval(playGame, 1000 / 60);
-      break;
   } 
 }
 
@@ -114,9 +110,11 @@ function keyDownHandler(event) {
   switch (event.keyCode) {
     case 38:
       upArrowPressed = true;
+      console.log(event + " pressed");
       break;
     case 40:
       downArrowPressed = true;
+      console.log(event + " pressed");
       break;
   }
 }
