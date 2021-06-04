@@ -9,6 +9,7 @@ const paddleHeight = 100;
 
 let upArrowPressed = false;
 let downArrowPressed = false;
+let spacePressed = false;
 let gamePaused = false;
 let victory = false;
 
@@ -95,8 +96,18 @@ function drawBall(x, y, radius, color) {
   context.fill();
 }
 
+window.addEventListener('space', spaceKeyHandler);
 window.addEventListener('keydown', keyDownHandler);
 window.addEventListener('keyup', keyUpHandler);
+
+function spaceKeyHandler(event) {
+  switch (event.keyCode) {
+      case 32;
+      spacePressed = true;
+      setInterval(playGame, 1000 / 60);
+      break;
+  } 
+}
 
 function keyDownHandler(event) {
   switch (event.keyCode) {
@@ -233,5 +244,3 @@ function playGame() {
   update();
   drawCanvas();
 }
-
-setInterval(playGame, 1000 / 60);
