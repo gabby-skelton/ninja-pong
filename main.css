@@ -42,3 +42,8 @@ h2 {
   padding: 5px;
   transition: 0.4s;
 }
+
+#spaceMsg {
+  padding: 7px;
+  right: 45vw;
+}
