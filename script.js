@@ -105,7 +105,6 @@ function keyDownHandler(event) {
     case 32:
       spacePressed = true;
       console.log("space pressed");
-      spaceMsg.style.display = "none";
       setInterval(playGame, 1000 / 60);
       break;
     case 38:
@@ -250,5 +249,5 @@ function playGame() {
 drawCanvas();
 
 if(spacePressed == true) {
-  
+  spaceMsg.style.display = "none";
 }
