@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #3588b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  border: 3px solid white;
+}
+
+svg {
+  position: absolute;
+  top: 68.5vh;
+  left: 30vw;
+  color: white;
+  opacity: 0.6;
+}
+
+svg:hover {
+  opacity: 1;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.bi-play-circle, h2 {
+  display: none;
+}
+
+h2 {
+  position: absolute;
+  top: 48vh;
+  right: 46.5vw;
+  background-color: white;
+  padding: 5px;
+  transition: 0.4s;
+}
