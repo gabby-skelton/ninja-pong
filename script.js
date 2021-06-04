@@ -211,7 +211,7 @@ function pause() {
 function play() {
   pauseButton.style.display = "block";
   playButton.style.display = "none";
-  ball.speed = 7;
+  ball.speed = 9;
   ball.velocityX = 5;
   ball.velocityY = 5;
   gamePaused = false;
