@@ -104,6 +104,7 @@ function spaceKeyHandler(event) {
   switch (event.keyCode) {
       case 32;
       spacePressed = true;
+      console.log("space key pressed");
       setInterval(playGame, 1000 / 60);
       break;
   } 
