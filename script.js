@@ -103,6 +103,7 @@ function keyDownHandler(event) {
   switch (event.keyCode) {
     case 32:
       spacePressed = true;
+      break;
     case 38:
       upArrowPressed = true;
       console.log(event + " pressed");
@@ -118,6 +119,7 @@ function keyUpHandler(event) {
   switch (event.keyCode) {
     case 32: 
       spacePressed = false;
+      break;
     case 38:
       upArrowPressed = false;
       break;
