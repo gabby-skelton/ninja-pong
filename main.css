@@ -30,7 +30,7 @@ svg:hover {
   cursor: pointer;
 }
 
-.bi-play-circle, h2 {
+.bi-play-circle, #winner {
   display: none;
 }
 
