@@ -58,7 +58,7 @@ const ball = {
   speed: 7,
   velocityX: 5,
   velocityY: 5,
-  color: '#FFF' 
+  color: '#FFF'
 };
 
 function drawCanvas() {
@@ -66,8 +66,8 @@ function drawCanvas() {
   context.fillRect(0, 0, canvas.width, canvas.height);
 
   drawNet();
-  drawScore(canvas.width / 4, canvas.height / 6, mouse.score, "p1");
-  drawScore(3 * canvas.width / 4, canvas.height / 6, keys.score, "p2");
+  drawScore(canvas.width / 4.75, canvas.height / 6, mouse.score, "p1");
+  drawScore(3.35 * (canvas.width / 4.75), canvas.height / 6, keys.score, "p2");
   drawPaddle(mouse.x, mouse.y, mouse.width, mouse.height, mouse.color);
   drawPaddle(keys.x, keys.y, keys.width, keys.height, keys.color);
   drawBall(ball.x, ball.y, ball.radius, ball.color);
@@ -106,6 +106,7 @@ function keyDownHandler(event) {
       spacePressed = true;
       console.log("space pressed");
       setInterval(playGame, 1000 / 60);
+      spaceMsg.style.display = "none";
       break;
     case 38:
       upArrowPressed = true;
@@ -120,7 +121,7 @@ function keyDownHandler(event) {
 
 function keyUpHandler(event) {
   switch (event.keyCode) {
-    case 32: 
+    case 32:
       spacePressed = false;
       break;
     case 38:
@@ -247,8 +248,3 @@ function playGame() {
 }
 
 drawCanvas();
-
-if(spacePressed == true) {
-  
-  spaceMsg.style.display = "none";
-}
