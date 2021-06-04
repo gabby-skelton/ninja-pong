@@ -53,7 +53,7 @@ const ball = {
   x: canvas.width / 2,
   y: canvas.height / 2,
   radius: 10,
-  speed: 7,
+  speed: 9,
   velocityX: 5,
   velocityY: 5,
   color: '#FFF'
@@ -123,7 +123,7 @@ function keyUpHandler(event) {
 function reset() {
   ball.x = canvas.width / 2;
   ball.y = canvas.height / 2;
-  ball.speed = 7;
+  ball.speed = 9;
 
   ball.velocityX = -ball.velocityX;
   ball.velocityY = -ball.velocityY;
