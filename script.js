@@ -127,11 +127,6 @@ function keyUpHandler(event) {
   }
 }
 
-if(spacePressed == true) {
-  console.log(event + " pressed");
-  setInterval(playGame, 1000 / 60);
-}
-
 function reset() {
   ball.x = canvas.width / 2;
   ball.y = canvas.height / 2;
@@ -244,4 +239,9 @@ function play() {
 function playGame() {
   update();
   drawCanvas();
+}
+
+if(spacePressed == true) {
+  console.log("space pressed");
+  setInterval(playGame, 1000 / 60);
 }
