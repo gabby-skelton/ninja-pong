@@ -53,10 +53,10 @@ const ball = {
   x: canvas.width / 2,
   y: canvas.height / 2,
   radius: 10,
-  speed: 9,
+  speed: 7,
   velocityX: 5,
   velocityY: 5,
-  color: '#FFF'
+  color: '#FFF' 
 };
 
 function drawCanvas() {
@@ -123,7 +123,7 @@ function keyUpHandler(event) {
 function reset() {
   ball.x = canvas.width / 2;
   ball.y = canvas.height / 2;
-  ball.speed = 9;
+  ball.speed = 7;
 
   ball.velocityX = -ball.velocityX;
   ball.velocityY = -ball.velocityY;
@@ -211,7 +211,7 @@ function pause() {
 function play() {
   pauseButton.style.display = "block";
   playButton.style.display = "none";
-  ball.speed = 9;
+  ball.speed = 7;
   ball.velocityX = 5;
   ball.velocityY = 5;
   gamePaused = false;
