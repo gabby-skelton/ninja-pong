@@ -20,6 +20,7 @@ var playButton = document.getElementsByClassName('bi-play-circle');
 playButton = playButton[0];
 
 var winner = document.getElementById('winner');
+var spaceMsg = document.getElementById('spaceMsg');
 
 // net
 const net = {
@@ -104,6 +105,7 @@ function keyDownHandler(event) {
     case 32:
       spacePressed = true;
       console.log("space pressed");
+      spaceMsg.style.display = "none";
       setInterval(playGame, 1000 / 60);
       break;
     case 38:
