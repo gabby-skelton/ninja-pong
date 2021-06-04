@@ -245,6 +245,8 @@ function playGame() {
   drawCanvas();
 }
 
+drawCanvas();
+
 if(spacePressed == true) {
   
 }
