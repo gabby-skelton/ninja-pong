@@ -105,7 +105,6 @@ function keyDownHandler(event) {
     case 32:
       spacePressed = true;
       console.log("space pressed");
-      setInterval(playGame, 1000 / 60);
       break;
     case 38:
       upArrowPressed = true;
@@ -249,5 +248,6 @@ function playGame() {
 drawCanvas();
 
 if(spacePressed == true) {
+  setInterval(playGame, 1000 / 60);
   spaceMsg.style.display = "none";
 }
