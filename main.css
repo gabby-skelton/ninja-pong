@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -17,11 +18,11 @@ canvas {
 }
 
 svg {
-  position: absolute;
-  top: 68.5vh;
-  left: 30vw;
   color: white;
   opacity: 0.6;
+  position: absolute;
+  bottom: 5%;
+  left: 4%;
 }
 
 svg:hover {
@@ -30,20 +31,23 @@ svg:hover {
   cursor: pointer;
 }
 
+.content {
+  position: absolute;
+  width: 42vw;
+  height: 51vh;
+  top: 24.25vh;
+  left: 29vw;
+}
+
+.background {
+  background-color: white;
+  padding: 10px;
+  width: 45%;
+  margin-left: 27.5%;
+  margin-top: 30%;
+  text-align: center;
+}
+
 .bi-play-circle, #winner {
   display: none;
-}
-
-h2 {
-  position: absolute;
-  top: 48vh;
-  right: 46.5vw;
-  background-color: white;
-  padding: 5px;
-  transition: 0.4s;
-}
-
-#spaceMsg {
-  padding: 12px;
-  right: 40vw;
 }
